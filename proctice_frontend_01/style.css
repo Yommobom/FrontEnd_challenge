@@ -1,0 +1,7 @@
+header {
+    background-color: #3e2723; /* 背景：濃いブラウン */
+    color: #ffffff;/* 文字：白 */
+    text-align: center;/* 文字を真ん中寄せ */
+    margin: 0;/* 画面端の余白をリセット */
+    padding: 40px 20px;/* 上下40px、左右20pxの余白 */;
+}

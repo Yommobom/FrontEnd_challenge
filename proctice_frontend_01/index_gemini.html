@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Coffee Jelly Life | おすすめコーヒーゼリー巡り</title>
+    /* 全体のデザイン調整 */
+    <style>
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+            background-color: #faf6f0; /* ほんのりミルク色 */
+            color: #3e2723; /* 深いコーヒーブラウン */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* ヘッダー */
+        header {
+            background-color: #3e2723;
+            color: #fff;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1rem;
+            color: #d7ccc8;
+        }
+
+        /* メインコンテンツ */
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* イントロダクション */
+        .intro {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .intro h2 {
+            border-bottom: 2px solid #8d6e63;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+
+        /* ショップカードのグリッド */
+        .shop-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        /* 個別ショップカード */
+        .shop-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .shop-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(62, 39, 35, 0.15);
+        }
+
+        /* 画像プレースホルダー */
+        .shop-img {
+            width: 100%;
+            height: 200px;
+            background-color: #d7ccc8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #5d4037;
+            font-weight: bold;
+            font-size: 0.9rem;
+            object-fit: cover;
+        }
+
+        /* カードのテキストエリア */
+        .shop-info {
+            padding: 1.5rem;
+        }
+
+        .shop-tag {
+            background-color: #8d6e63;
+            color: #fff;
+            font-size: 0.75rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+
+        .shop-title {
+            margin: 0 0 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .shop-meta {
+            font-size: 0.85rem;
+            color: #757575;
+            margin-bottom: 1rem;
+        }
+
+        .shop-desc {
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .recommend-point {
+            background-color: #efebe9;
+            padding: 0.8rem;
+            border-left: 4px solid #5d4037;
+            font-size: 0.9rem;
+            border-radius: 0 4px 4px 0;
+        }
+
+        /* フッター */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #3e2723;
+            color: #fff;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Coffee Jelly Life</h1>
+        <p>〜 魅惑のコーヒーゼリー巡り記録 〜</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>私がコーヒーゼリーに恋した理由</h2>
+            <p>
+                ただ苦いだけじゃない。甘いクリームとのコントラスト、クラッシュタイプや固め食感の違い。<br>
+                知れば知るほど奥が深い、私のいちおしコーヒーゼリーたちをご紹介します！
+            </p>
+        </section>
+
+        <section class="shop-grid">
+            <!-- 店舗カード1 -->
+            <article class="shop-card">
+                <!-- 本番では src に画像のURLを入れてください -->
+                <div class="shop-img">【画像プレースホルダー：店舗1】</div>
+                <div class="shop-info">
+                    <span class="shop-tag">固めレトロ派</span>
+                    <h3 class="shop-title">純喫茶 モカブラウン</h3>
+                    <div class="shop-meta">📍 東京都渋谷区 / 予算: ¥600</div>
+                    <p class="shop-desc">昭和レトロな雰囲気が漂う純喫茶。ここのコーヒーゼリーは、スプーンが跳ね返るほどのしっかりとした固さが特徴です。</p>
+                    <div class="recommend-point">
+                        <strong>ここが推し！</strong><br>
+                        上に乗ったバニラアイスと、昔ながらの真っ赤なサクランボのビジュアルが最高にエモいです。
+                    </div>
+                </div>
+            </article>
+
+            <!-- 店舗カード2 -->
+            <article class="shop-card">
+                <div class="shop-img">【画像プレースホルダー：店舗2】</div>
+                <div class="shop-info">
+                    <span class="shop-tag">とろぷる進化系</span>
+                    <h3 class="shop-title">CAFE FLAT</h3>
+                    <div class="shop-meta">📍 神奈川県横浜市 / 予算: ¥800</div>
+                    <p class="shop-desc">スペシャリティコーヒー専門店が作る、飲むようにつるんと食べられる新感覚のコーヒーゼリー。</p>
+                    <div class="recommend-point">
+                        <strong>ここが推し！</strong><br>
+                        自家製のエスプレッソシロップを直前にかけるので、香りの高さがケタ違いです。
+                    </div>
+                </div>
+            </article>
+
+            <!-- 店舗カード3 -->
+            <article class="shop-card">
+                <div class="shop-img">【画像プレースホルダー：店舗3】</div>
+                <div class="shop-info">
+                    <span class="shop-tag">クラッシュ＆ホイップ</span>
+                    <h3 class="shop-title">琥珀珈琲店</h3>
+                    <div class="shop-meta">📍 京都府京都市 / 予算: ¥700</div>
+                    <p class="shop-desc">クラッシュした微糖ゼリーに、限界まで甘さを控えた濃厚な生クリームがこれでもかと注がれています。</p>
+                    <div class="recommend-point">
+                        <strong>ここが推し！</strong><br>
+                        ほろ苦いゼリーとホイップが混ざり合う瞬間は、まさに至福のひととき。
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Coffee Jelly Life. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
