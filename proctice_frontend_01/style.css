@@ -5,3 +5,98 @@ header {
     margin: 0;/* 画面端の余白をリセット */
     padding: 40px 20px;/* 上下40px、左右20pxの余白 */;
 }
+
+body {
+    /* 背景に画像を指定する（画像のパスやURLを url() の中に入れる） */
+    background-color: #faf6f0; /* 背景：ミルク色 */
+
+    background-size: cover;       /* 画面いっぱいに隙間なく画像を広げる */
+    background-position: center;  /* 画像の中心が画面の真ん中に来るようにする */
+    background-attachment: fixed;  /* 画面をスクロールしても背景画像が動かないように固定する（お好みで！） */
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.shop-card {
+    background-color: #ffffff; /* カードの背景：白 */
+    border: 1px solid #d7ccc8; /* 細い枠線 */
+    border-radius: 8px;        /* 角を少し丸くする */
+    padding: 20px;             /* カードの内側の余白 */
+    margin-bottom: 30px;       /* カードとカードの下の間隔 */
+}
+.shop-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(62, 39, 35, 0.15);
+}
+
+
+
+
+/* 画像プレースホルダー */
+.shop-img {
+    width: 100%;
+    height: 200px;
+    background-color: #d7ccc8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5d4037;
+    font-weight: bold;
+    font-size: 0.9rem;
+    object-fit: cover;
+}
+
+/* カードのテキストエリア */
+.shop-info {
+    padding: 1.5rem;
+}
+
+.shop-tag {
+    background-color: #8d6e63;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.shop-title {
+    margin: 0 0 0.5rem;
+    font-size: 1.3rem;
+}
+
+.shop-meta {
+    font-size: 0.85rem;
+    color: #757575;
+    margin-bottom: 1rem;
+}
+
+.shop-desc {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.recommend-point {
+    background-color: #efebe9;
+    padding: 0.8rem;
+    border-left: 4px solid #5d4037;
+    font-size: 0.9rem;
+    border-radius: 0 4px 4px 0;
+}
+
+
+
+/* フッター */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #3e2723;
+    color: #fff;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+}
